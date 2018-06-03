@@ -33,7 +33,6 @@ MagicGrid.prototype.getSquare = function () {
     square.style.backgroundColor = color;
 
     const squareContainer = document.createElement('div');
-    squareContainer.style.backgroundColor = color;
     squareContainer.onmouseenter = (e) => {
         if (!this.wClicked) return;
         this.animateSquareEvent(e, square);
